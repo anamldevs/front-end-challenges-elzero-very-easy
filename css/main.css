@@ -1,0 +1,18 @@
+:root {
+  --main-green: #40e0d0;
+  --light-green: #40e080;
+  --malachite-green: #50e040;
+  --yellow-color: #e0d040;
+  --red-color: #e04050;
+  --foshia-color: #e040a0;
+  --pink-color: #d040e0;
+  --blue-color: #4050e0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+}
