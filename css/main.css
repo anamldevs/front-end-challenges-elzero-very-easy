@@ -22,8 +22,8 @@
   outline: none;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Cairo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 a {
@@ -49,3 +49,11 @@ ul {
   min-height: 100vh;
 }
 /* Start SideBar */
+.sidebar {
+  width: 150px;
+  box-shadow: 0 0 10px var(--shadow-color) inset;
+}
+.sidebar > h3 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
