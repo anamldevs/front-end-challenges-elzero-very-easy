@@ -1,18 +1,51 @@
 :root {
   --main-green: #40e0d0;
+  --shadow-color: #90e0d8;
   --light-green: #40e080;
   --malachite-green: #50e040;
+  --lemon-color: #a0e040;
   --yellow-color: #e0d040;
   --red-color: #e04050;
   --foshia-color: #e040a0;
   --pink-color: #d040e0;
   --blue-color: #4050e0;
+  --orange-color: #e08040;
+  --violet-color: #8040e0;
+  --grey-color: ; #4d5555;
+  --grey-light-color: #a7aaaa;
+  --white-color: #e9f8f7;
 }
 * {
   box-sizing: border-box;
+}
+*:focus {
+  outline: none;
 }
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Cairo', sans-serif;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--shadow-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-green);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lemon-color);
+}
+.page {
+  min-height: 100vh;
+}
+/* Start SideBar */

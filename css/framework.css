@@ -1,0 +1,105 @@
+:root {
+  --main-green: #40e0d0;
+  --shadow-color: #90e0d8;
+  --light-green: #40e080;
+  --malachite-green: #50e040;
+  --lemon-color: #a0e040;
+  --yellow-color: #e0d040;
+  --red-color: #e04050;
+  --foshia-color: #e040a0;
+  --pink-color: #d040e0;
+  --blue-color: #4050e0;
+  --orange-color: #e08040;
+  --violet-color: #8040e0;
+  --grey-color: ; #4d5555;
+  --grey-light-color: #a7aaaa;
+  --white-color: #e1fffc;
+}
+/* Start Box */
+.d-flex {
+  display: flex;
+}
+.f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* End Box */
+/* Start Padding + Margin */
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+/* End Padding + Margin */
+/* Start Color */
+.bg-white {
+  background-color: var(--white-color);
+}
+.c-black {
+  color: black;
+}
+/* End Color */
+/* start Position */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.p-fixed {
+  position: fixed;
+}
+/* End Position */
+/* Start Font */
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.txt-c {
+  text-align: center;
+}
+/* End Font */
+/* Start Border */
+.rad-3 {
+  border-radius: 3px;
+}
+.rad-5 {
+  border-radius: 5px;
+}
+.rad-6 {
+  border-radius: 6px;
+}
+/* End Border */
+/* Start width and Height */
+
+/* End width and Height */
+/* Start component */
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End component */
