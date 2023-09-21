@@ -47,29 +47,22 @@ ul {
 }
 .page {
   background-color: var(--white-color);
-  display: flex;
   min-height: 100vh;
 }
 /* Start SideBar */
 .sidebar {
   width: 150px;
-  padding: 10px;
-  position: relative;
-  background-color: var(--white-color);
   box-shadow: 0 0 10px var(--shadow-color) inset;
 }
 .sidebar > h3 {
-  margin-top: 10px;
   margin-bottom: 50px;
-  text-align: center;
-  position: relative;
 }
 .sidebar > h3::before,
 .sidebar > h3::after {
-  content: '';
+  content: "";
   background-color: black;
-  position: absolute;
   transform: translateX(-50%);
+  position: absolute;
   left: 50%;
 }
 .sidebar > h3::before {
@@ -78,20 +71,13 @@ ul {
   bottom: -20px;
 }
 .sidebar > h3::after {
-  bottom: -30px;
+  bottom: -29px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  transform: translate(-10px , 0px);
-  border: 4px solid white;
+  border: 4px solid var(--white-color);
 }
 .sidebar ul li a {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  color: black;
-  border-radius: 6px;
-  padding: 10px;
   transition: 0.3s;
   margin-bottom: 5px;
 }
@@ -109,40 +95,13 @@ ul {
     padding: 10px;
   }
   .sidebar > h3 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: x-small;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    font-size: 10px;
   }
   .sidebar > h3::before,
   .sidebar > h3::after {
-    content: '';
-    background-color: black;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-  }
-  .sidebar > h3::before {
-    width: 50px;
-    height: 2px;
-    bottom: -15px;
-  }
-  .sidebar > h3::after {
-    bottom: -20px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    transform: translate(-8px , 0px);
-    border: 2px solid white
-  }
-  .sidebar ul li a {
-    font-size: large;
-    padding-left: 8px;
-    margin-bottom: 10px;  }
-
-
-  .sidebar ul li a:hover,
-  .sidebar ul li a:active {
-    background-color: var(--main-green);
+display: none;
   }
   .sidebar ul li a span {
     display: none;
@@ -153,48 +112,46 @@ ul {
 .content {
   overflow: hidden;
 }
-.head .search::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.head .search::before {
+  font-family: "fontawesome";
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.head .search input {
+  border: 1px solid var(--orange-color);
+  border-radius: 10px;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 170px;
+  transition: width 0.3s;
+}
+.head .search input:focus {
+  width: 220px;
+}
+.head .search input:focus::placeholder {
+  opacity: 0;
+}
+.head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
 
 .head .icons img {
   width: 32px;
   height: 32px;
   margin-left: 15px;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 /* End Content */

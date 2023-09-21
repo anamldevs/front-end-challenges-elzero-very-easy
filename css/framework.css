@@ -20,8 +20,10 @@
   display: flex;
 }
 .f-wrap {
-  display: flex;
   flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
 }
 /* End Box */
 /* Start Padding + Margin */
@@ -105,6 +107,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* End component */
