@@ -19,11 +19,28 @@
 .d-flex {
   display: flex;
 }
+.d-grid {
+  display: grid;
+}
+.d-block {
+  display: block;
+}
 .f-wrap {
   flex-wrap: wrap;
 }
 .align-center {
   align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.gap-20 {
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
 }
 /* End Box */
 /* Start Padding + Margin */
@@ -87,6 +104,11 @@
 .txt-c {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
 /* End Font */
 /* Start Border */
 .rad-3 {
@@ -98,9 +120,14 @@
 .rad-6 {
   border-radius: 6px;
 }
+.rad-10 {
+  border-radius: 10px;
+}
 /* End Border */
 /* Start width and Height */
-
+.w-full {
+  width: 100%;
+}
 /* End width and Height */
 /* Start component */
 .center-flex {

@@ -147,11 +147,26 @@ display: none;
   right: -5px;
   top: -5px;
 }
-
 .head .icons img {
   width: 32px;
   height: 32px;
   margin-left: 15px;
   border-radius: 40%;
+}
+.page h1::before,
+.page h1::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.page h1::before {
+  background-color: var(--white-color);
+  width: 120px;
+}
+.page h1::after {
+  background-color: var(--main-green);
+  width: 40px;
 }
 /* End Content */
