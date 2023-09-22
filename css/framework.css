@@ -11,8 +11,8 @@
   --blue-color: #4050e0;
   --orange-color: #e08040;
   --violet-color: #8040e0;
-  --grey-color: #4d5555;
-  --grey-light-color: #a7aaaa;
+  --grey-color: #999999;
+  --grey-light-color: #dfdfdf;
   --white-color: #e1fffc;
 }
 /* Start Box */
@@ -41,6 +41,9 @@
   .block-mobile {
     display: block;
   }
+  .hide-mobile {
+    display: none;
+  }
 }
 /* End Box */
 /* Start Padding + Margin */
@@ -65,13 +68,43 @@
 .mt-10 {
   margin-top: 10;
 }
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
 /* End Padding + Margin */
 /* Start Color */
 .bg-white {
   background-color: var(--white-color);
 }
+.bg-light-green {
+  background-color: var(--light-green);
+}
+.bg-light-grey {
+  background: var(--grey-light-color);
+}
+.bg-blue {
+  background: var(--blue-color);
+}
+.c-main {
+  color: var(--main-green);
+}
 .c-black {
   color: black;
+}
+.c-grey {
+  color: var(--grey-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-light-grey {
+  color: var(--grey-light-color);
+}
+.c-white {
+  color: var(--white-color);
 }
 /* End Color */
 /* start Position */
@@ -128,6 +161,9 @@
 .w-full {
   width: 100%;
 }
+.w-fit {
+  width: fit-content;
+}
 /* End width and Height */
 /* Start component */
 .center-flex {
@@ -140,5 +176,8 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
 /* End component */
