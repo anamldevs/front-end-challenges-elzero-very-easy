@@ -188,7 +188,7 @@ display: none;
   }
 }
 /* End Content */
-/* Start Welcome Widget */
+/* Start Welcome Widget In All Pages*/
 .welcome {
   overflow: hidden;
 }
@@ -231,4 +231,59 @@ display: none;
     margin-bottom: 20px;
   }
 }
-/* End Welcome Widget */
+/* End Welcome Widget In All Pages */
+/* ====================================== */
+/* Start Dashboard Page */
+
+/* End Dashboard Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Settings Page */
+
+/* End Settings Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Profile Page */
+
+/* End Profile Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Projects Page */
+.project-page {
+  
+}
+/* End Projects Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Courses Page */
+
+/* End Courses Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Friends Page */
+
+/* End Friends Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Files Page */
+
+/* End Files Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Plans Page */
+
+/* End Plans Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Testing Page */
+
+/* End Testing Page */
+/* ====================================== */
