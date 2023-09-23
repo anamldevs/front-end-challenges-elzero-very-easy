@@ -38,7 +38,7 @@ ul {
   width: 15px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--shadow-color);
+  background-color: var(--yellow-color);
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-green);
@@ -199,8 +199,8 @@ display: none;
 .welcome .avatar {
   width: 64px;
   height: 64px;
-  border: 2px solid var(--white-color);
-  border-radius: 50%;
+  border: 2px solid var(--yellow-color);
+  border-radius: 40%;
   padding: 2px;
   box-shadow: 0 0 5 var(--shadow-color);
   margin-left: 20px;
@@ -253,8 +253,98 @@ display: none;
 /* ====================================== */
 /* Start Projects Page */
 .project-page {
-  
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  position: relative;
 }
+.projects-page .project .date {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.projects-page .project .elzero-logo {
+  background-color: #0075ff;
+  color: #fff;
+  position: absolute;
+  scale: 0.75;
+  top: 40px;
+  right: 20px;
+}
+.projects-page .project h4 {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px,1fr);
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 10px;
+  }
+  .projects-page .project .date {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+  }
+  .projects-page .project h4 {
+    font-weight: bold;
+  }
+  .projects-page .project .elzero-logo {
+    background-color: #0075ff;
+    color: #fff;
+    position: absolute;
+    scale: 0.50;
+    rotate: 90deg;
+    top: 100px;
+    right: -60px;
+  }
+}
+.projects-page .project a {
+  position: relative;
+  display: flex;
+  min-height: 30px;
+}
+.projects-page .project .do {
+  border-top: 1px solid var(--malachite-green);
+  border-bottom: 1px solid var(--malachite-green);
+  padding: 20px 0;
+  margin: 20px 0;
+  justify-content: end;
+}
+@media (max-width: 767px) {
+  .projects-page .project a,
+  .projects-page .project .do {
+    flex-direction: column;
+  }
+}
+.projects-page .project .do span {
+  padding: 3px 8px;
+  margin-left: 5px;
+  width: fit-content;
+}
+.projects-page .project .info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.projects-page .project .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 9px;
+}
+@media (max-width: 767px) {
+  .projects-page .project .prog {
+    margin-bottom: 15px;
+  }
+}
+.projects-page .project .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+
 /* End Projects Page */
 /* ====================================== */
 
