@@ -188,7 +188,7 @@ display: none;
   }
 }
 /* End Content */
-/* Start Welcome Widget In All Pages*/
+/* Start Welcome Widget */
 .welcome {
   overflow: hidden;
 }
@@ -231,7 +231,7 @@ display: none;
     margin-bottom: 20px;
   }
 }
-/* End Welcome Widget In All Pages */
+/* End Welcome Widget */
 /* ====================================== */
 /* Start Dashboard Page */
 
@@ -252,65 +252,73 @@ display: none;
 
 /* ====================================== */
 /* Start Projects Page */
-.project-page {
+.projects-page {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  position: relative;
-}
-.projects-page .project .date {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.projects-page .project .elzero-logo {
-  background-color: #0075ff;
-  color: #fff;
-  position: absolute;
-  scale: 0.75;
-  top: 40px;
-  right: 20px;
-}
-.projects-page .project h4 {
-  font-weight: bold;
 }
 @media (max-width: 767px) {
   .projects-page {
-    grid-template-columns: minmax(200px,1fr);
+    grid-template-columns: minmax(200px, 1fr);
     margin-left: 5px;
     margin-right: 5px;
-    gap: 10px;
+    gap: 5px;
   }
-  .projects-page .project .date {
-    position: absolute;
-    right: 20px;
-    top: 40px;
-  }
-  .projects-page .project h4 {
-    font-weight: bold;
-  }
-  .projects-page .project .elzero-logo {
-    background-color: #0075ff;
-    color: #fff;
-    position: absolute;
-    scale: 0.50;
-    rotate: 90deg;
-    top: 100px;
-    right: -60px;
-  }
-}
-.projects-page .project a {
-  position: relative;
-  display: flex;
-  min-height: 30px;
-}
-.projects-page .project .do {
-  border-top: 1px solid var(--malachite-green);
-  border-bottom: 1px solid var(--malachite-green);
-  padding: 20px 0;
-  margin: 20px 0;
-  justify-content: end;
 }
 @media (max-width: 767px) {
-  .projects-page .project a,
+  .projects-page .project {
+    display: grid;
+    justify-items: center;
+  }
+}
+.projects-page .project .head-project {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+.projects-page .project .head-project  h4 {
+}
+.projects-page .project .head-project  img {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border-radius: 6px;
+  transform: translateY(-10px);
+}
+.projects-page .project .head-project .date {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .projects-page .project .head-project {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    justify-items: center;
+  }
+}
+.projects-page .project .templates {
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 50px;
+  border-top: 1px solid var(--main-green);
+  border-bottom: 1px solid var(--main-green);
+  display: inline-flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .projects-page .project .templates {
+    flex-direction: column;
+  }
+}
+.projects-page .project .do {
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--orange-color);
+}
+@media (max-width: 767px) {
   .projects-page .project .do {
     flex-direction: column;
   }
@@ -321,30 +329,32 @@ display: none;
   width: fit-content;
 }
 .projects-page .project .info {
-  display: flex;
-  justify-content: space-between;
   margin-top: 15px;
   padding-top: 15px;
 }
-.projects-page .project .prog {
+@media (maxwidth: 767px) {
+  .projects-page .project .info {
+    flex-direction: column;
+  }
+}
+.projects-page .project .info .prog {
   height: 8px;
   width: 260px;
   position: relative;
-  border-radius: 9px;
+  border-radius: 6px;
 }
-@media (max-width: 767px) {
-  .projects-page .project .prog {
-    margin-bottom: 15px;
-  }
-}
-.projects-page .project .prog span {
+.projects-page .project .info .prog span {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   border-radius: 6px;
 }
-
+.projects-page .challengs .challenge-box .box .box-head {
+  borfer-bottom: 1px solid var(--grey-color);
+  border-radius: 6px;
+}
+.projects-page .challengs
 /* End Projects Page */
 /* ====================================== */
 
