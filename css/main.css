@@ -30,6 +30,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: var(--blue-color);
+}
 ul {
   list-style: none;
   padding: 0;
@@ -350,11 +353,27 @@ display: none;
   height: 100%;
   border-radius: 6px;
 }
-.projects-page .challengs .challenge-box .box .box-head {
-  borfer-bottom: 1px solid var(--grey-color);
-  border-radius: 6px;
+.projects-page .challenges .challenge-box .box .cover {
+  border-bottom: 2px solid var(--orange-color);
 }
-.projects-page .challengs
+.projects-page .challenges .challenge-box .box .info {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.projects-page .challenges .challenge-box .box .title {
+  display: block;
+  width: fit-content;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.projects-page .challenges .challenge-box .box a:hover {
+  color: var(--blue-color);
+}
+.projects-page .challenges .challenge-box .box
+.projects-page .challenges .challenge-box .box
+.projects-page .challenges .challenge-box .box
 /* End Projects Page */
 /* ====================================== */
 

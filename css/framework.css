@@ -40,6 +40,9 @@
 .gap-20 {
   gap: 20px;
 }
+.over-hidden {
+  overflow: hidden;
+}
 @media (max-width: 767px) {
   .block-mobile {
     display: block;
