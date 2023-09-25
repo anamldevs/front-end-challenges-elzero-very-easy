@@ -278,8 +278,6 @@ display: none;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
 }
-.projects-page .project .head-project  h4 {
-}
 .projects-page .project .head-project  img {
   background-color: var(--blue-color);
   color: var(--white-color);
