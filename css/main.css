@@ -1,6 +1,6 @@
 :root {
   --main-green: #40e0d0;
-  --alt-main-grenn:#e1fffc;
+  --alt-main-green:#e1fffc;
   --shadow-color: #90e0d8;
   --light-green: #40e080;
   --malachite-green: #50e040;
@@ -12,8 +12,8 @@
   --blue-color: #4050e0;
   --orange-color: #e08040;
   --violet-color: #8040e0;
-  --grey-color: #4d5555;
-  --grey-light-color: #a7aaaa;
+  --grey-color: #a7aaaa;
+  --grey-light-color: #efefef;
   --white-color: #f1faf9;
 }
 * {
