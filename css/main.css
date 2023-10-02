@@ -369,9 +369,29 @@ display: none;
 .projects-page .challenges .challenge-box .box a:hover {
   color: var(--blue-color);
 }
-.projects-page .challenges .challenge-box .box
-.projects-page .challenges .challenge-box .box
-.projects-page .challenges .challenge-box .box
+.projects-page .card-trans {
+  background-color: var(--grey-light-color);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #d040e0;
+}
+.projects-page .card-trans .card {
+  border: 1px solid var(--grey-light-color);
+  height: 60%;
+  top: 30%;
+  bottom: 10%;
+}
+.projects-page .card-trans .card-title {
+  border-bottom: 1px solid var(--grey-light-color);
+  
+}
+.projects-page .card-trans title {
+  color: var(--main-green);
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
 /* End Projects Page */
 /* ====================================== */
 
