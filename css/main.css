@@ -444,13 +444,13 @@ display: none;
   content: "A+";
   font-size: x-large;
   color: white;
-  position: absolute;
   background-color: var(--malachite-green);
-  right: 65px;
-  bottom: 50px;
   font-weight: bold;
   padding: 5px;
   border-radius: 5px;
+  position: absolute;
+  left: 80%;
+  bottom: 7%;
 }
 .card .card-inside .card-title {
   position: relative;
