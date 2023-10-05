@@ -18,6 +18,7 @@
 }
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 *:focus {
   outline: none;
@@ -415,35 +416,6 @@ display: none;
   display: flex;
   align-items: flex-end;
 }
-/* End Projects Page */
-/* ====================================== */
-
-/* ====================================== */
-/* Start Courses Page */
-
-/* End Courses Page */
-/* ====================================== */
-
-/* ====================================== */
-/* Start Friends Page */
-
-/* End Friends Page */
-/* ====================================== */
-
-/* ====================================== */
-/* Start Files Page */
-
-/* End Files Page */
-/* ====================================== */
-
-/* ====================================== */
-/* Start Plans Page */
-
-/* End Plans Page */
-/* ====================================== */
-
-/* ====================================== */
-/* Start Testing Page */
 .card {
   width: 500px;
   height: 500px;
@@ -513,5 +485,51 @@ display: none;
   justify-content: space-between;
   margin: 0 0 5px 0;
 }
+.creative-titles {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.creative-titles h3 {
+  padding: 10px;
+  display: block;
+}
+.creative-titles h3 span {
+  display: block;
+  width: 200px;
+  height: 10px;
+}
+.creative-titles
+/* End Projects Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Courses Page */
+
+/* End Courses Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Friends Page */
+
+/* End Friends Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Files Page */
+
+/* End Files Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Plans Page */
+
+/* End Plans Page */
+/* ====================================== */
+
+/* ====================================== */
+/* Start Testing Page */
 /* End Testing Page */
 /* ====================================== */
