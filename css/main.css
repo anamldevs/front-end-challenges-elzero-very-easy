@@ -393,6 +393,14 @@ display: none;
 .projects-page .challenges .challenge-box .box a:hover {
   color: var(--blue-color);
 }
+.dotted {
+  display: flex;
+  margin-left: 50px;
+  width: 100px;
+  height: 20px;
+  scale: 1.5;
+  border: 5px  dotted var(--main-green);
+}
 .projects-page .card-trans {
   background-color: var(--grey-light-color);
   width: 80%;
