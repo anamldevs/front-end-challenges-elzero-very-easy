@@ -486,6 +486,7 @@ display: none;
   margin: 0 0 5px 0;
 }
 .magic-colors {
+  background-color: white;
   margin: 10px;
   padding: 10px;
   display: block;
@@ -494,7 +495,6 @@ display: none;
   font-size: large;
   color: black;
   position: relative;
-  height: 250px;
 }
 .magic-colors h3 {
   display: flex;
@@ -508,14 +508,18 @@ display: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: static;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .magic-colors .container h3 {
   display: block;
-  color: black;
-  padding-bottom: 10px;
+  font-size: medium;
+  margin-top: 15px;
 }
 .magic-colors .container span {
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   display: block;
   position: relative;
   width: 200px;
@@ -526,23 +530,100 @@ display: none;
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--red-color);
   transform: scaleX(0.5);
   transform-origin: left;
   transition: transform 0.3s;
 }
+.magic-colors .container .python :before {
+  background-color: var(--blue-color);
+}
+.magic-colors .container .html :before {
+  background-color: var(--red-color);
+}
+.magic-colors .container .css :before {
+  background-color: var(--malachite-green);
+}
+.magic-colors .container .js :before {
+  background-color: var(--orange-color);
+}
 .magic-colors .container span::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+}
+.magic-colors .container.box span::after {
+  content: "\f45c";
+  font-family: "fontawesome";
+}
+.magic-colors .container.circle span::after {
+  content: "\f111";
+  font-family: "fontawesome";
+}
+.magic-colors .container.triangle-up span::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 10px;
-  height: 10px;
-  background-color: var(--red-color);
-  transform: translate(-50% , -50%)
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  transform: translate(-50% , -90%);
+}
+.magic-colors .container.triangle-down span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  transform: translate(-50% , 0%);
+}
+.magic-colors .container .python :after {
+  color: var(--blue-color);
+}
+.magic-colors .container .html :after {
+  color: var(--red-color);
+}
+.magic-colors .container .css :after {
+  color: var(--malachite-green);
+}
+.magic-colors .container .js :after {
+  color: var(--orange-color);
+}
+.magic-colors .container.triangle-up .python :after {
+  border-color: transparent transparent var(--blue-color) transparent;
+}
+.magic-colors .container.triangle-up .html :after {
+  border-color: transparent transparent var(--red-color) transparent;
+}
+.magic-colors .container.triangle-up .css :after {
+  border-color: transparent transparent var(--malachite-green) transparent;
+}
+.magic-colors .container.triangle-up .js :after {
+  border-color: transparent transparent var(--orange-color) transparent;
+}
+.magic-colors .container.triangle-down .python :after {
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+.magic-colors .container.triangle-down .html :after {
+  border-color: var(--red-color) transparent transparent transparent;
+}
+.magic-colors .container.triangle-down .css :after {
+  border-color:  var(--malachite-green) transparent transparent transparent;
+}
+.magic-colors .container.triangle-down .js :after {
+  border-color: var(--orange-color) transparent transparent transparent;
 }
 /* End Projects Page */
 /* ====================================== */
