@@ -843,7 +843,38 @@ display: none;
 .game-profile .section-5 p .red {
   color: var(--red-color);
 }
+.comparison {
+  width: 100%;
+  background-color: var(--grey-light-color);
+  padding: 60px 10px 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.comparison .basic,
+.comparison .prof {
+  background-color: white;
+  border-radius: 6px;
+}
+.comparison .basic h3 {
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 6px 6px 0 0;
+  background-color: var(--red-color);
+}
+.comparison .basic p,
+.comparison .prof p {
+  padding: 10px 0 10px 50px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--grey-light-color);
 
+}
 /* End Projects Page */
 /* ====================================== */
 
