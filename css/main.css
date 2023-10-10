@@ -655,7 +655,7 @@ display: none;
   width: 100%;
   justify-content: center;
   align-items: center;
-  border-right: 2px solid grey;
+  border-right: 1px solid grey;
 }
 .game-profile .section-1 .photo img {
   width: 100px;
@@ -664,6 +664,7 @@ display: none;
 }
 .game-profile .section-1 .photo p {
   width: 100%;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -698,19 +699,52 @@ display: none;
 .game-profile .section-1 .photo p span strong {
   color: var(--main-green);
 }
-
-
-
-
-
-
-
-
+.game-profile .section-1 .info {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.game-profile .section-1 .info p {
+  font-size: 13px;
+  padding-top: 10px;
+}
+.game-profile .section-1 .info span {
+  align-self: flex-end;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .game-profile .section-2 {
   background-color: white;
   border-radius: 6px;
   padding: 10px;
 }
+.game-profile .section-2 div {
+  color: white;
+  margin: 10px 0;
+  padding: 5px;
+  width: max-content;
+  height: 30px;
+  background-color: grey;
+  border: 1px solid var(--grey-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-profile .section-2 p {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
 .game-profile .section-3 {
   background-color: white;
   border-radius: 6px;
