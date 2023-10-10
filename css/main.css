@@ -870,10 +870,110 @@ display: none;
 }
 .comparison .basic p,
 .comparison .prof p {
+  position: relative;
   padding: 10px 0 10px 50px;
   font-size: 13px;
   border-bottom: 1px solid var(--grey-light-color);
 
+}
+.comparison .prof h3 {
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 6px 6px 0 0;
+  background-color: var(--main-green);
+}
+.comparison .prof .save {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 100px;
+  height: 30px;
+  background: var(--main-green);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+}
+.comparison .prof .save::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--grey-light-color);
+  rotate : 45deg;
+  right: -10px;
+}
+.comparison .prof .help {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 15px;
+  height: 15px;
+  font-weight: bold;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white
+}
+.comparison p {
+  font-size: 8px;
+}
+.comparison p.right::before {
+  content: "";
+  background-color: var(--blue-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+}
+.comparison p.right::after {
+  content: "L";
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 16px;
+  top: 10px;
+  z-index: 5;
+  transform: rotate3d(100, -300, 0, -155deg);
+}
+.comparison p.wrong::before {
+  content: "";
+  background-color: var(--red-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+}
+.comparison p.wrong::after {
+  content: "X";
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 16px;
+  top: 12px;
+  z-index: 5;
+  transform: rotate3d(1, 1, 1, 2deg);
 }
 /* End Projects Page */
 /* ====================================== */
