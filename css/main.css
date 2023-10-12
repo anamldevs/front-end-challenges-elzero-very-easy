@@ -1033,7 +1033,7 @@ display: none;
 }
 .classic-sidebar .category-list h3 {
   padding-bottom: 20px;
-}
+} 
 .classic-sidebar .category-list h3::after {
   content: "";
   border-width: 50px;
