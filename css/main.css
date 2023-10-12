@@ -69,7 +69,7 @@ ul {
   font-size: 30px;
   box-shadow: 0 0 10px var(--shadow-color) inset;
   z-index: 1000;
-  transition:all 2s 2s linear !important;
+  transition:all 5s linear !important;
 }
 @media (max-width: 767px) {
   #top-scroll::before {
@@ -1006,7 +1006,7 @@ display: none;
   text-wrap: nowrap;
   padding: 10px 15px;
   top: -60px;
-  transition: 0.5s;
+  transition: 750ms;
 }
 .tooltip::before {
   content: "";
@@ -1018,6 +1018,35 @@ display: none;
   border-width: 10px;
   border-color: black transparent transparent transparent;
 }
+.classic-sidebar {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  /* position: absolute; */
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.classic-sidebar .category-list {
+  margin-bottom: 20px;
+}
+.classic-sidebar .category-list h3 {
+  padding-bottom: 20px;
+}
+.classic-sidebar .category-list h3::after {
+  content: "";
+  border-width: 50px;
+  border-color: var(--blue-color);
+  border-style: solid;
+
+}
+
+
+.classic-sidebar .gallery img {
+  width: 80px;
+}
+
 
 /* End Projects Page */
 /* ====================================== */
