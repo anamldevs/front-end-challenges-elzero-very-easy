@@ -975,10 +975,50 @@ display: none;
   z-index: 5;
   transform: rotate3d(1, 1, 1, 2deg);
 }
-.tooltip {
+.tooltp-button {
+  background-color: red;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: block;
+  font-size: x-large;
+  font-weight: bold;
   position: relative;
-  
+  width: 250px;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
 }
+.tooltp-button:hover {
+  overflow: visible;
+}
+.tooltip {
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: medium;
+  width: fit-content;
+  text-wrap: nowrap;
+  padding: 10px 15px;
+  top: -60px;
+  transition: 0.5s;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 10px;
+  border-color: black transparent transparent transparent;
+}
+
 /* End Projects Page */
 /* ====================================== */
 
