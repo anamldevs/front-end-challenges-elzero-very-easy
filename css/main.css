@@ -1031,23 +1031,53 @@ display: none;
 .classic-sidebar .category-list {
   margin-bottom: 20px;
 }
-.classic-sidebar .category-list h3 {
+.classic-sidebar h3 {
+  width: fit-content;
   padding-bottom: 20px;
+  position: relative;
 } 
-.classic-sidebar .category-list h3::after {
+.classic-sidebar h3::after {
   content: "";
-  border-width: 50px;
-  border-color: var(--blue-color);
-  border-style: solid;
-
+  position: absolute;
+  width: 50px;
+  top:12px;
+  left: 110%;
+  border: 1px solid var(--blue-color);
 }
-
-
+.classic-sidebar .category-list p {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey-light-color);
+}
+.classic-sidebar .category-list p:last-of-type {
+  border-bottom: none;
+}
+.classic-sidebar .category-list p span {
+  background-color: var(--grey-color);
+  padding: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
 .classic-sidebar .gallery img {
   width: 80px;
+  display: inline-block;
+  padding: 2px;
 }
-
-
+.classic-sidebar .archives p {
+  padding: 10px 0 10px 20px;
+  font-size: 13px;
+  position: relative;
+}
+.classic-sidebar .archives p i {
+  position: absolute;
+  left: -5px;
+}
 /* End Projects Page */
 /* ====================================== */
 
