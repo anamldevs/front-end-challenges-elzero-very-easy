@@ -162,6 +162,9 @@
 }
 /* End Position */
 /* Start Font */
+.fs-10 {
+  font-size: 10px;
+}
 .fs-13 {
   font-size: 13px;
 }

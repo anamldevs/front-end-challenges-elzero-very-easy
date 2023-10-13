@@ -1,5 +1,6 @@
 :root {
   --main-green: #40e0d0;
+  --dark-main-green: #009688;
   --alt-main-green:#e1fffc;
   --shadow-color: #90e0d8;
   --light-green: #40e080;
@@ -1022,8 +1023,8 @@ display: none;
   width: 300px;
   background-color: white;
   padding: 20px;
-  /* position: absolute; */
-  right: 0;
+  position: relative;
+  margin: 0 0 0 auto;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -1077,6 +1078,79 @@ display: none;
 .classic-sidebar .archives p i {
   position: absolute;
   left: -5px;
+}
+.sales-products {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sales-products>h4 {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: var(--dark-main-green);
+  color: white;
+}
+.sales-products div {
+  position: relative;
+  margin: 40px 5PX  ;
+  border: 5px solid var(--grey-light-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.sales-products img {
+  width: 100%;
+}
+.sales-products p {
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 10px 0px 0px;
+}
+.sales-products div::before {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--grey-light-color);
+  width: 90%;
+  left: 5%;
+  bottom: 8%;
+}
+.sales-products span {
+  background-color: white;
+  color: var(--dark-main-green);
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 5px 5px;
+  z-index: 2;
+}
+.sales-products span.sale {
+  color: var(--orange-color);
+  font-weight: bold;
+}
+.sales-products span.sale::before {
+  content: "Sale!";
+  font-size: 10px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--orange-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -187px;
+  left: -40px;
 }
 /* End Projects Page */
 /* ====================================== */
