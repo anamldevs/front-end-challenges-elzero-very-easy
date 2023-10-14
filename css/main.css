@@ -1153,12 +1153,13 @@ display: none;
   left: -40px;
 }
 .megaman {
-  width: 100%;
-  position: relative;
+  width: 95%;
   background-color: white;
+  margin: 0 auto;
+  position: relative;
   border: 10px solid;
-  border-color: black;
-  border-radius: 6px;
+  border-image: linear-gradient(to right, #292929 50%, white 50%) 1;
+  border-image-slice: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1166,17 +1167,14 @@ display: none;
 .megaman::before {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: #292929;
   width: 50%;
   height: 100%;
-  right: -10px;
-  border: 10px;
-  border-style: solid;
-  border-color: white white white transparent;
-  border-radius: 0 6px 6px 0;
+  right: 0;
 }
+
 .megaman img {
-  scale: 90%;
+  scale: 80%;
   z-index: 5;
 } 
 
