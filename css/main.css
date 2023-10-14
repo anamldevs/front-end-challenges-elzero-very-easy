@@ -1157,12 +1157,15 @@ display: none;
   background-color: white;
   margin: 0 auto;
   position: relative;
-  border: 10px solid;
-  border-image: linear-gradient(to right, #292929 50%, white 50%) 1;
-  border-image-slice: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 10px solid transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, #292929 50%, white 50%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 .megaman::before {
   content: "";
@@ -1175,8 +1178,9 @@ display: none;
 
 .megaman img {
   scale: 80%;
-  z-index: 5;
-} 
+  position: inherit;
+  bottom: -40px;
+}
 
 /* End Projects Page */
 /* ====================================== */
