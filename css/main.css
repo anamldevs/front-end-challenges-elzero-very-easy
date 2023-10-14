@@ -1085,7 +1085,7 @@ display: none;
   background-color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .sales-products>h4 {
   display: inline-block;
