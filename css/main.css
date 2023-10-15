@@ -1175,14 +1175,38 @@ display: none;
   height: 100%;
   right: 0;
 }
-
 .megaman img {
   scale: 80%;
   position: inherit;
   bottom: -40px;
   right: 10px;
 }
+.two-column {
+  border: 2px solid var(--main-green);
+  padding: 5px;
+  background-color: var(--grey-light-color);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+grid-template: 3 2;
+  padding: 10px;
 
+}
+.two-column div {
+  padding: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.two-column div input {
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--grey-light-color);
+  background-color: white;
+  border-radius: 3px;
+  height: 50px;
+}
 /* End Projects Page */
 /* ====================================== */
 
