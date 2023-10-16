@@ -1182,31 +1182,48 @@ display: none;
   right: 10px;
 }
 .two-column {
-  border: 2px solid var(--main-green);
-  padding: 5px;
-  background-color: var(--grey-light-color);
   width: 100%;
+  /* height: 350px; */
+  background-color: var(--grey-light-color);
+  border: 2px solid var(--main-green);
+  border-radius: 5px;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-grid-template: 3 2;
-  padding: 10px;
-
+}
+.two-column .column1,
+.two-column .column2 {
+  width: 100%;
+}
+.two-column p.star::after {
+content: "*";
+position: absolute;
+color: red;
 }
 .two-column div {
+  position: relative;
   padding: 10px;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
-.two-column div input {
+.two-column input {
   width: 100%;
-  outline: none;
+  height: 45px;
   border: 1px solid var(--grey-light-color);
-  background-color: white;
-  border-radius: 3px;
-  height: 50px;
+  box-shadow: 0px 1px 1px var(--grey-light-color);
+  border-radius: 5px;
 }
+.two-column button {
+  width: 200%;
+  height: 45px;
+  color: white;
+  font-size: 18px;
+  background-color: var(--main-green);
+  border: 1px solid var(--dark-main-green);
+  box-shadow: 0px 1px 1px var(--light-green);
+  border-radius: 5px;
+  display: block;
+  align-self: last baseline;
+}
+
 /* End Projects Page */
 /* ====================================== */
 
