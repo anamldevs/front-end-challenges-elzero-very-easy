@@ -1248,6 +1248,93 @@ display: none;
   align-self: stretch;
 }
 
+.team-skills {
+  width: 100%;
+  border: 1px solid var(--foshia-color);
+  border-radius: 5px;
+}
+.team-skills nav {
+  width: 100%;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.team-skills nav ul {
+  list-style: none;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.team-skills nav ul li {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+
+}
+.team-skills section article {
+  padding: 20px 50px;
+}
+.team-skills section article.xp-service {
+  width: 100%;
+  background-color: var(--grey-light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-skills h4,
+.team-skills h5 {
+
+  padding-bottom: 10px;
+}
+.team-skills section article.xp-service span {
+  color: var(--blue-color);
+}
+.team-skills section article.xp-service p {
+  font-size: 10px;
+  text-align: center;
+}
+.team-skills section article.three-icons {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.team-skills section article.three-icons div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-skills section article.three-icons img {
+  width: 30px;
+}
+.team-skills section article.three-icons p {
+  font-size: 8px;
+  padding: 10px;
+  color: var(--grey-color);
+  text-align: center;
+}
+.team-skills section article.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.team-skills section article.about img {
+  width: 50%;
+}
+.team-skills section article.about p {
+  font-size: 10px;
+}
+.team-skills footer {
+  padding: 10px 50px;
+}
 /* End Projects Page */
 /* ====================================== */
 
