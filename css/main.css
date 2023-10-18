@@ -1137,7 +1137,7 @@ display: none;
   color: var(--orange-color);
   font-weight: bold;
 }
-.sales-products span.sale::before {
+.sales-products div.sale::before {
   content: "Sale!";
   font-size: 10px;
   position: absolute;
@@ -1149,8 +1149,8 @@ display: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -187px;
-  left: -40px;
+  top: -10px;
+  left: -10px;
 }
 .megaman {
   width: 95%;
