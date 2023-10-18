@@ -1272,7 +1272,6 @@ display: none;
   padding-left: 10px;
   display: flex;
   align-items: center;
-
 }
 .team-skills section article {
   padding: 20px 50px;
@@ -1332,6 +1331,35 @@ display: none;
 .team-skills section article.about p {
   font-size: 10px;
 }
+.team-skills .three-count {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-skills .three-count div {
+  width: 145px;
+  height: 50px;
+  font-size: 8px;
+  background-color: var(--blue-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-skills .three-count div:first-child {
+  background-color: var(--red-color);
+}
+.team-skills .three-count div:last-child {
+  background-color: var(--dark-main-green);
+}
+.team-skills .three-count div  span {
+  font-size: 25px;
+}
+
+
 .team-skills footer {
   padding: 10px 50px;
 }
