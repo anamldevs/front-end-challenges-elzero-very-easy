@@ -1340,8 +1340,9 @@ display: none;
   align-items: center;
 }
 .team-skills .three-count div {
-  width: 145px;
+  width: 32%;
   height: 50px;
+  
   font-size: 8px;
   background-color: var(--blue-color);
   color: white;
@@ -1380,8 +1381,8 @@ display: none;
 }
 .team-skills .our-skills .skill {
   background-color: white;
-  width: 90%;
-
+  min-width: 80%;
+  max-width: 90%;
 }
 .team-skills .our-skills span {  
   background-color: var(--blue-color);
@@ -1398,6 +1399,15 @@ display: none;
 }
 .team-skills footer {
   padding: 10px 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+}
+.team-skills footer span {
+  color: var(--lemon-color);
 }
 /* End Projects Page */
 /* ====================================== */
