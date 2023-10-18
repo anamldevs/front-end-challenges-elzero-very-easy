@@ -1321,6 +1321,7 @@ display: none;
   text-align: center;
 }
 .team-skills section article.about {
+  background-color: var(--grey-light-color);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1355,11 +1356,46 @@ display: none;
 .team-skills .three-count div:last-child {
   background-color: var(--dark-main-green);
 }
-.team-skills .three-count div  span {
+.team-skills .three-count div span {
   font-size: 25px;
 }
+.team-skills .our-skills {
+  background-color: var(--grey-light-color);
+}
+.team-skills .our-skills h4 {
+  text-align: center;
+}
+.team-skills .our-skills h6 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.team-skills .our-skills div {
+  height: 20px;
+  margin: 10px 0px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.team-skills .our-skills .skill {
+  background-color: white;
+  width: 90%;
 
-
+}
+.team-skills .our-skills span {  
+  background-color: var(--blue-color);
+  position: absolute;
+  height: 100%;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  left: 0;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .team-skills footer {
   padding: 10px 50px;
 }
