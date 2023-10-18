@@ -16,6 +16,9 @@
   --grey-color: #a7aaaa;
   --grey-light-color: #efefef;
   --white-color: #f1faf9;
+  --main-purple-color: #5c48f1;
+  --elements-background-color: #eeecfd;
+  --element-border-color: #e0e0e1;
 }
 * {
   box-sizing: border-box;
@@ -394,13 +397,8 @@ display: none;
 .projects-page .challenges .challenge-box .box a:hover {
   color: var(--blue-color);
 }
-.dotted {
-  display: flex;
-  margin-left: 50px;
-  width: 100px;
-  height: 20px;
-  scale: 1.5;
-  border: 5px  dotted var(--main-green);
+.star-difficulty {
+  color: var(--grey-color);
 }
 .projects-page .card-trans {
   background-color: var(--grey-light-color);
@@ -1409,6 +1407,8 @@ display: none;
 .team-skills footer span {
   color: var(--lemon-color);
 }
+
+
 /* End Projects Page */
 /* ====================================== */
 

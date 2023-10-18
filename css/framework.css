@@ -1,5 +1,6 @@
 :root {
   --main-green: #40e0d0;
+  --dark-main-green: #009688;
   --alt-main-green:#e1fffc;
   --shadow-color: #90e0d8;
   --light-green: #40e080;
@@ -15,6 +16,9 @@
   --grey-color: #a7aaaa;
   --grey-light-color: #efefef;
   --white-color: #f1faf9;
+  --main-purple-color: #5c48f1;
+  --elements-background-color: #eeecfd;
+  --element-border-color: #e0e0e1;
 }
 /* Start Box */
 .d-flex {
