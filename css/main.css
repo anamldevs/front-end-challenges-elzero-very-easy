@@ -1408,6 +1408,28 @@ display: none;
   color: var(--lemon-color);
 }
 
+.interested-box {
+  width: 100%;
+  background-color: white;
+  border: 1px solid var(--grey-light-color);
+  border-radius: 5px;
+  padding: 10px
+}
+.interested-box h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-purple-color);
+  font-size: 13px;
+  height: 50px;
+  background-color: var(--elements-background-color);
+}
+.interested-box div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 /* End Projects Page */
 /* ====================================== */
