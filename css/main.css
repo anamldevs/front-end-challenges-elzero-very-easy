@@ -1413,23 +1413,84 @@ display: none;
   background-color: white;
   border: 1px solid var(--grey-light-color);
   border-radius: 5px;
-  padding: 10px
+  padding: 5px
 }
 .interested-box h4 {
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--main-purple-color);
-  font-size: 13px;
+  font-size: 14px;
   height: 50px;
   background-color: var(--elements-background-color);
 }
-.interested-box div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+
+.interested-box>div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.interested-box .control {
+  width: auto;
+  height: 100px;
+  margin: 5px;
+  border: 2px solid var(--element-border-color);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* .interested-box .control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+} */
+.interested-box .control label {
+  width: 100%;
+  font-size: 14px;
+  padding-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  font-weight: bold ;
+  position: relative;
+}
+.interested-box .control label::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid var(--element-border-color);
+  border-radius: 3px;
+}
+.interested-box .control label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -55px;
+  background-color: var(--main-purple-color);
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+/* .interested-box .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+} */
+.interested-box .control i {
+  font-size: 50px;
+  align-self: center;
+  color: var(--main-purple-color);
+}
+
 
 /* End Projects Page */
 /* ====================================== */
