@@ -1457,34 +1457,33 @@ display: none;
   font-weight: bold ;
   position: relative;
 }
-.interested-box .control label::before {
+.interested-box .control::before {
   content: "";
   position: absolute;
-  top: -58px;
+  top: 5px;
   left: 5px;
-  width: 15px;
-  height: 15px;
-  border: 1.5px solid var(--element-border-color);
-  border-radius: 3px;
-}
-.interested-box .control label::after {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: -55px;
-  background-color: var(--main-purple-color);
-  font-size: 12px;
   width: 12px;
   height: 12px;
+  border: 2px solid var(--element-border-color);
   border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
 }
-/* .interested-box .control input[type="checkbox"]:checked + label::after {
-  transform: scale(1);
+/* .interested-box .control label::before:hover {
+  border-color: var(--main-green);
 } */
+.interested-box .control label::after {
+  content: "\f0c8";
+  font-family: "fontawesome";
+  position: absolute;
+  left: 8px;
+  top: -56.5px;
+  color: var(--main-purple-color);
+  border-radius: 3px;
+  transform: scale(0) rotate(360deg);
+  transition: 1s;
+}
+.interested-box .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
 .interested-box .control i {
   font-size: 50px;
   align-self: center;
