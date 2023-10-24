@@ -1340,7 +1340,6 @@ display: none;
 .team-skills .three-count div {
   width: 32%;
   height: 50px;
-  
   font-size: 8px;
   background-color: var(--blue-color);
   color: white;
@@ -1443,14 +1442,12 @@ display: none;
   justify-content: space-evenly;
   align-items: center;
 }
-.interested-box .control:hover{
-  background-color: white;
-  border: 2px solid var(--element-border-color);
-}
+
 .interested-box .control input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
 }
+
 .interested-box .control label {
   width: 100%;
   display: flex;
@@ -1460,28 +1457,32 @@ display: none;
   cursor: pointer;
   position: relative;
 }
+.interested-box .control i {
+  font-size: 45px;
+  color: var(--main-purple-color);
+  padding-bottom: 3px;
+}
 .interested-box .control label::before {
   content: "";
   position: absolute;
-  left: -1px;
-  top: 51%;
-  width: 14px;
-  height: 14px;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
   border: 1px solid var(--element-border-color);
   margin-top: -50px;
   margin-left: 5px;
   border-radius: 3px;
 }
-.interested-box .control label:hover::before {
+.interested-box .control label:hover::before  {
   font-family: "fontawesome";
   content: "\f0c8";
-  font-weight: 600;
   position: absolute;
-  left: -1px;
-  top: 51%;
-  width: 14px;
-  height: 14px;
-  font-size: 11px;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
   border: 1px solid rgb(92 72 241 / 80%);
   margin-top: -50px;
   margin-left: 5px;
@@ -1495,13 +1496,12 @@ display: none;
 .interested-box .control label::after {
   font-family: "fontawesome";
   content: "\f0c8";
-  font-weight: 600;
   position: absolute;
-  left: -1px;
-  top: 51%;
-  width: 14px;
-  height: 14px;
-  font-size: 11px;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
   border: 1px solid var(--main-purple-color);
   margin-top: -50px;
   margin-left: 5px;
@@ -1515,14 +1515,6 @@ display: none;
 .interested-box .control input[type="checkbox"]:checked + label::after {
   transform: scale(1);
 }
-.interested-box .control i {
-  font-size: 45px;
-  color: var(--main-purple-color);
-  padding-bottom: 3px;
-}
-
-
-
 /* End Projects Page */
 /* ====================================== */
 
