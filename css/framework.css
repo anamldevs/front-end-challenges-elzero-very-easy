@@ -51,14 +51,14 @@
 .over-hidden {
   overflow: hidden;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .block-mobile {
     display: block;
   }
   .hide-mobile {
     display: none;
   }
-}
+} */
 /* End Box */
 /* Start Padding + Margin */
 .p-5 {
@@ -190,11 +190,11 @@
 .txt-c {
   text-align: center;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .txt-c-mobile {
     text-align: center;
   }
-}
+} */
 /* End Font */
 /* Start Border */
 .b-main {
