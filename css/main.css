@@ -1486,7 +1486,6 @@ display: none;
   align-items: center;
   color: rgb(92 72 241 / 50%);
 }
-
 .interested-box .control label::after {
   font-family: "fontawesome";
   content: "\f0c8";
@@ -1508,11 +1507,10 @@ display: none;
 }
 .interested-box .control input[type="checkbox"]:checked + label::after {
   transform: scale(1);
-  &:interested-box .control label {
-    border-color: rgb(92 72 241 / 50%);
-    background-color: rgb(92 72 241 / 50%);
-
-  }
+}
+.interested-box .control input[type="checkbox"]:checked + label {
+  border-color: rgb(92 72 241 / 80%);
+  background-color: rgb(92 72 241 / 10%);
 }
 /* End Projects Page */
 /* ====================================== */
