@@ -310,7 +310,9 @@ ul {
 
 /* ====================================== */
 /* Start Projects Page */
-.projects-page {}
+.projects-page {
+  
+}
 /* @media (max-width: 767px) {
   .projects-page {
     grid-template-columns: minmax(200px, 1fr);
