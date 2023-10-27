@@ -314,10 +314,9 @@ ul {
 /* Start Projects Page */
 .projects-page {
   width: 100%;
-  margin: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
+  gap: 10px;
 }
 /* @media (max-width: 767px) {
   .projects-page {
@@ -340,22 +339,25 @@ ul {
   border-radius: 6px;
   position: relative;
   display: grid;
-  grid-row: 4fr;
 }
-.projects-page .project .four_templates .head-project {
+.projects-page .four_templates .head-project {
   position: relative;
   display: grid;
+  justify-content: space-between;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.projects-page .project .head-project  img {
+.projects-page .project .head-project img {
   background-color: var(--blue-color);
   color: var(--white-color);
   border-radius: 6px;
-  align-items: center;
+  justify-self: center;
 }
 .projects-page .project .head-project .date {
-  /* display: flex;
-  justify-content: flex-end; */
+  position: relative;
+  right: 0;
+  text-align: end;
+  justify-self: end;
 }
 /* @media (max-width: 767px) {
   .projects-page .project .head-project {
@@ -366,8 +368,7 @@ ul {
   }
 } */
 .projects-page .project h4 {
-  /* margin: 0;
-  padding-bottom: 20px; */
+  color: var(--foshia-color);
 }
 .projects-page .project .templates {
   margin-top: 10px;
@@ -384,11 +385,15 @@ ul {
     flex-direction: column;
   }
 } */
+.projects-page .project .templates a {
+  border-left: 1px solid var(--foshia-color);
+  padding-left: 5px;
+}
 .projects-page .project .do {
-  justify-content: flex-end;
+  /* justify-content: flex-end;
   margin-top: 10px;
   padding: 10px;
-  border-bottom: 1px solid var(--orange-color);
+  border-bottom: 1px solid var(--orange-color); */
 }
 /* @media (max-width: 767px) {
   .projects-page .project .do {
@@ -396,13 +401,13 @@ ul {
   }
 } */
 .projects-page .project .do span {
-  padding: 3px 8px;
+  /* padding: 3px 8px;
   margin-left: 5px;
-  width: fit-content;
+  width: fit-content; */
 }
 .projects-page .project .info {
-  margin-top: 15px;
-  padding-top: 15px;
+  /* margin-top: 15px;
+  padding-top: 15px; */
 }
 /* @media (max-width: 767px) {
   .projects-page .project .info {
@@ -410,17 +415,17 @@ ul {
   }
 } */
 .projects-page .project .info .prog {
-  height: 8px;
+  /* height: 8px;
   width: 260px;
   position: relative;
-  border-radius: 6px;
+  border-radius: 6px; */
 }
 .projects-page .project .info .prog span {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 0;
   height: 100%;
-  border-radius: 6px;
+  border-radius: 6px; */
 }
 .projects-page .challenges .challenge-box .box .cover {
   border-bottom: 2px solid var(--orange-color);
