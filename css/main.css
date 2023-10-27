@@ -82,7 +82,7 @@ ul {
 
 /* Start SideBar */
 .sidebar {
-  width: 250px;
+  width: 200px;
   box-shadow: 0 0 10px var(--shadow-color) inset;
 }
 .sidebar > h3 {
@@ -233,7 +233,8 @@ ul {
   width: 40px;
 } */
 .wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin: 20px;
   gap: 20px;
 }
