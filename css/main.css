@@ -1016,7 +1016,7 @@ ul {
   transform: translateX(-50%);
   font-size: medium;
   width: fit-content;
-  text-wrap: nowrap;
+  wrap: nowrap;
   padding: 10px 15px;
   top: -60px;
   transition: 750ms;
