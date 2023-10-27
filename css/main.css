@@ -404,7 +404,7 @@ ul {
   margin-top: 15px;
   padding-top: 15px;
 }
-/* @media (maxwidth: 767px) {
+/* @media (max-width: 767px) {
   .projects-page .project .info {
     flex-direction: column;
   }
