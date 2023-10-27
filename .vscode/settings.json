@@ -18,5 +18,10 @@
     "titleBar.inactiveBackground": "#36598599",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#365985"
+  "peacock.color": "#365985",
+  "cSpell.words": [
+    "brieft",
+    "descripe",
+    "megaman"
+  ]
 }
