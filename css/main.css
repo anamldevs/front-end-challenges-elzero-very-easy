@@ -1625,6 +1625,43 @@ ul {
   padding-bottom: 3px;
   position: relative;
 }
+.course_offer_box {
+  background-color: var(--dark-main-green);
+  padding: 50px;
+  display: grid;
+  grid-template-areas: 
+  "buy"
+  "package"
+  "package"
+  "package"
+  ;
+}
+.course_offer_box .buy {
+  padding-bottom: 10px;
+  grid-area: buy;
+}
+.course_offer_box .buy h3 {
+  padding: 10px 0;
+  font-size: x-large;
+}
+.course_offer_box .buy i {
+}
+.course_offer_box .buy p {
+  font-size: 10px;
+}
+.course_offer_box .package {
+  grid-area: package;
+}
+.course_offer_box .package {}
+.course_offer_box .package .prem_package {}
+.course_offer_box .package .prem_package h3 {}
+.course_offer_box .package .prem_package i {}
+.course_offer_box .package .prem_package p {}
+.course_offer_box .package .prem_package .price_buynow {}
+.course_offer_box .package .prem_package button {}
+
+.course_offer_box .package .essen_package {}
+
 
 /* End Projects Page */
 /* ====================================== */
