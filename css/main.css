@@ -1626,8 +1626,9 @@ ul {
   position: relative;
 }
 .course_offer_box {
-  background-color: var(--dark-main-green);
+  background-color: #51509b;
   padding: 50px;
+  border-radius: 5PX;
   display: grid;
   grid-template-areas: 
   "buy"
@@ -1635,8 +1636,10 @@ ul {
   "package"
   "package"
   ;
+  position: relative;
 }
 .course_offer_box .buy {
+  color: white;
   padding-bottom: 10px;
   grid-area: buy;
 }
@@ -1644,23 +1647,69 @@ ul {
   padding: 10px 0;
   font-size: x-large;
 }
-.course_offer_box .buy i {
-}
-.course_offer_box .buy p {
+.course_offer_box p {
   font-size: 10px;
+  color: black;
 }
 .course_offer_box .package {
   grid-area: package;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
 }
-.course_offer_box .package {}
-.course_offer_box .package .prem_package {}
-.course_offer_box .package .prem_package h3 {}
-.course_offer_box .package .prem_package i {}
-.course_offer_box .package .prem_package p {}
-.course_offer_box .package .prem_package .price_buynow {}
-.course_offer_box .package .prem_package button {}
-
-.course_offer_box .package .essen_package {}
+.course_offer_box .package p:not(:last-child) {  
+  border-bottom: 1px solid #80808080;
+  padding: 10px 0;
+}
+.course_offer_box .package .prem_package {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 5px 0px 20px #00000045;
+  z-index: 1;
+}
+.course_offer_box .package .essen_package {
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+}
+.course_offer_box .package h3 {
+  padding: 10px 0;
+}
+.course_offer_box .package i {
+  scale: .8;
+}
+.course_offer_box .package .price_buynow {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.course_offer_box .package span:first-child {
+  font-size: 15px;
+  top: -10px;
+  font-weight: bold;
+}
+.course_offer_box .package span:last-child {
+  font-size: 10px;
+  font-weight: bold;
+}
+.course_offer_box .package button {
+  width: 80px;
+  padding: 0 10px ;
+  color: white;
+  background-color: #e5af40;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+}
+nnnnnn
 
 
 /* End Projects Page */
