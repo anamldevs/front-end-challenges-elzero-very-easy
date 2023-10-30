@@ -1009,13 +1009,13 @@ ul {
   color: white;
   position: absolute;
   left: 50%;
+  text-align: center;
   transform: translateX(-50%);
   font-size: medium;
-  width: fit-content;
-  wrap: nowrap;
+  width: 100%;
   padding: 10px 15px;
-  top: -60px;
-  transition: 750ms;
+  top: -53px;
+  transition: 0.5s;
 }
 .tooltip::before {
   content: "";
@@ -1732,6 +1732,8 @@ ul {
   position: inherit;
   right: 50px;
 }
+
+
 /* End Projects Page */
 /* ====================================== */
 
