@@ -1733,7 +1733,12 @@ ul {
   right: 50px;
 }
 .chat_messenger {
-  
+  min-height: 100vh;
+  background-color: white;
+  /* background-image: url("../imgs/042.jpg"); */
+  background-size: cover;
+  position: relative;
+  /* filter: brightness(0.5); */
 }
 
 /* End Projects Page */
