@@ -2019,14 +2019,34 @@ ul {
   top: 0;
   left: 0;
 }
+.animation_letters .e {
+  position: relative;
+}
+.animation_letters .e .cubic {
+  width: 80px;
+  height: 80px;
+  background-color: #fea604;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 0 0;
+  left: 380px;
+  top: 20px;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+@keyframes moving {
+  0% {
+    transform: translateX(-380px);
+  }
+  20% {
+    transform: translatex(100px);
+  }
 
-.animation_letters .e .bar_horz.first {}
-.animation_letters .e .bar_long_short.first {}
-.animation_letters .e .bar_horz.second {}
-.animation_letters .e .bar_long_short.second {}
-.animation_letters .e .bar_horz.third {}
-.animation_letters .l .bar_long_tall {}
-.animation_letters .l .bar_horz.third {}
+}
+
 
 
 /* End Projects Page */
