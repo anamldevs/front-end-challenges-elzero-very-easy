@@ -2020,6 +2020,15 @@ ul {
   left: 0;
 }
 
+.animation_letters .e .bar_horz.first {}
+.animation_letters .e .bar_long_short.first {}
+.animation_letters .e .bar_horz.second {}
+.animation_letters .e .bar_long_short.second {}
+.animation_letters .e .bar_horz.third {}
+.animation_letters .l .bar_long_tall {}
+.animation_letters .l .bar_horz.third {}
+
+
 /* End Projects Page */
 /* ====================================== */
 
