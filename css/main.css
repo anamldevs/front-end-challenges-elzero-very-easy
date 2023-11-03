@@ -2118,7 +2118,19 @@ ul {
   }
 }
 
-
+.team_grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 5;
+  gap: 50px;
+  overflow: hidden;
+}
+.team-grid div {
+  padding: 10px;
+  text-align: start;
+  border: 2px solid red;
+}
 
 /* End Projects Page */
 /* ====================================== */
