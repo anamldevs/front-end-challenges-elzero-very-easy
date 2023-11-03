@@ -2028,23 +2028,94 @@ ul {
   background-color: #fea604;
   position: absolute;
   z-index: 3;
-  transform-origin: 0 0;
-  left: 380px;
+  left: 385px;
   top: 20px;
-  animation-name: moving;
-  animation-duration: 4s;
+  animation-name: moving1;
+  animation-duration: 6s;
+  animation-direction:normal;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  animation-fill-mode:forwards;
+}
+@keyframes moving1 {
+  0% {
+    transform: translate(0 , 0);
+  }
+  7.4% {
+    transform: translate(-365px , 0);
+  }
+  14.8% {
+    transform: translate(-365px , 240px);
+  }
+  22.2% {
+    transform: translate(0px , 240px);
+  }
+  29.6% {
+    transform: translate(-365px , 240px);
+  }
+  37% {
+    transform: translate(-365px , 480px);
+  }
+  44.4% {
+    transform: translate(0 , 480px);
+  }
+  51.8% {
+    transform: translate(-365px , 480px);
+  }
+  59.2% {
+    transform: translate(-365px , 0);
+  }
+  66.6% {
+    transform: translate(0 , 0);
+  }
+  70% {
+    transform: translate(0 , 0);
+  }
+  100% {
+    transform: translate(0 , 0);
+  }
+}
+.animation_letters .l .cubic {
+  width: 80px;
+  height: 80px;
+  background-color: #fea604;
+  position: absolute;
+  z-index: 3;
+  right: 40px;
+  bottom: 30px;
+  animation-name: moving2;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-direction: normal;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
-@keyframes moving {
+@keyframes moving2 {
   0% {
-    transform: translateX(-380px);
+    opacity: 1;
+    transform: translate(0 , 0);
+  }
+  10% {
+    transform: translate(-340px , 0);
   }
   20% {
-    transform: translatex(100px);
+    transform: translate(-340px , -480px);
   }
-
+  50% {
+    transform: translate(-340px , -480px);
+  }
+  60% {
+    transform: translate(-340px , -480px);
+  }
+  70% {
+    opacity: 0;
+    transform: translate(-340px , -480px);
+  }
+  100% {
+    transform: translate(-340px , -480px);
+  }
 }
 
 
