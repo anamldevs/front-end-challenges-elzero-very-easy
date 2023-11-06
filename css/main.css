@@ -2121,10 +2121,10 @@ ul {
 .team_grid {
   height: 100vh;
   display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 5;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 20% 20% 20% 20%;
   gap: 50px;
-  overflow: hidden;
+  overflow: none;
 }
 .team-grid div {
   padding: 10px;
