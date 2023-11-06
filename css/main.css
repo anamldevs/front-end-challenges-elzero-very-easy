@@ -2119,13 +2119,51 @@ ul {
 }
 
 .team_grid {
-  height: 100vh;
   padding: 50px;
   background-color: var(--grey-light-color);
   display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr) 20%;
+  grid-template-areas: 
+  "team1 team1 team2 team3"
+  "team4 team5 team5 team3"
+  "team4 team6 team6 team3"
+  "team7 team8 team9 team10"
+  ;
   gap: 10px;
 }
+.team_grid .team1 {
+  grid-area: team1;
+}
+.team_grid .team2 {
+  grid-area: team2;
+}
+.team_grid .team3 {
+  grid-area: team3;
+  background-color: black;
+}
+.team_grid .team4 {
+  grid-area: team4;
+}
+.team_grid .team5 {
+  grid-area: team5;
+}
+.team_grid .team6 {
+  grid-area: team6;
+}
+.team_grid .team7 {
+  grid-area: team7;
+}
+.team_grid .team8 {
+  grid-area: team8;
+}
+.team_grid .team9 {
+  grid-area: team9;
+}
+.team_grid .team10 {
+  grid-area: team10;
+}
+
 .team_grid .team {
   background-color: white;
   border-bottom: 2px solid red;
