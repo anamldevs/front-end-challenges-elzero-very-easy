@@ -2120,18 +2120,44 @@ ul {
 
 .team_grid {
   height: 100vh;
+  padding: 50px;
+  background-color: var(--grey-light-color);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-  gap: 50px;
-  overflow: none;
+  grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+  gap: 10px;
 }
-.team-grid div {
-  padding: 10px;
-  text-align: start;
-  border: 2px solid red;
+.team_grid .team {
+  background-color: white;
+  border-bottom: 2px solid red;
+  padding: 20px;
 }
-
+.team_grid .team h4 {
+  padding-bottom: 5px;
+}
+.team_grid .team p:first-of-type {
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.team_grid .team p {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.team_grid .team p:last-of-type {
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+}
+.team_grid .team p:last-of-type::after {
+  content: "\0022";
+  font-size: 50px;
+  color: grey;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
 /* End Projects Page */
 /* ====================================== */
 
