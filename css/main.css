@@ -2140,13 +2140,16 @@ ul {
 }
 .team_grid .team3 {
   grid-area: team3;
-  background-color: black;
+  background-color: black !important;
+  color: white;
 }
 .team_grid .team4 {
   grid-area: team4;
 }
 .team_grid .team5 {
   grid-area: team5;
+  background-color: black !important;
+  color: white;
 }
 .team_grid .team6 {
   grid-area: team6;
@@ -2156,6 +2159,8 @@ ul {
 }
 .team_grid .team8 {
   grid-area: team8;
+  background-color: black !important;
+  color: white;
 }
 .team_grid .team9 {
   grid-area: team9;
@@ -2168,33 +2173,37 @@ ul {
   background-color: white;
   border-bottom: 2px solid red;
   padding: 20px;
+  position: relative;
+}
+.team_grid .team::after {
+  content: "\0022";
+  font-size: 50px;
+  color: grey;
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  transform: skew(-15deg);
+  color: var(--grey-color);
 }
 .team_grid .team h4 {
   padding-bottom: 5px;
 }
 .team_grid .team p:first-of-type {
   color: grey;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .team_grid .team p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   padding-bottom: 20px;
 }
 .team_grid .team p:last-of-type {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
   position: relative;
-}
-.team_grid .team p:last-of-type::after {
-  content: "\0022";
-  font-size: 50px;
-  color: grey;
-  bottom: 0;
-  right: 0;
-  position: absolute;
+  overflow: hidden;
 }
 /* End Projects Page */
 /* ====================================== */
